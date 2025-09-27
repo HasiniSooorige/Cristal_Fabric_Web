@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        nav a {
+            margin: 0 15px;
+            color: white;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        .product-list {
+            list-style-type: square;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        th,
+        td {
+            padding: 10px;
+            border: 1px solid #ddd;
+            text-align: center;
+        }
+
+        .image-gallery img {
+            width: 100%;
+            max-width: 150px;
+            margin: 5px;
+            transition: transform 0.3s;
+        }
+
+        .image-gallery img:hover {
+            transform: scale(1.1);
+        }
+
+        @keyframes slide {
+            0% {
+                transform: translateX(-100%);
+            }
+
+            100% {
+                transform: translateX(0);
+            }
+        }
+
+        .animation {
+            animation: slide 1s ease-out;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 600px) {
+            nav a {
+                display: block;
+                margin: 10px 0;
+            }
+        }
+    </style>
+    <script>
+        function showMessage() {
+            alert('Welcome to our Shop!');
+        }
+    </script>
+</head>
+
+<body onload="showMessage()">
+    <header>
+        <h1>Shop Website</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Products</a>
+            <a href="#">About Us</a>
+            <a href="#">Contact</a>
+            <a href="#">Help</a>
+        </nav>
+    </header>
+    <div class="container">
+        <h2>Product Categories</h2>
+        <ul class="product-list">
+            <li>Electronics</li>
+            <li>Clothing</li>
+            <li>Home Appliances</li>
+            <li>Groceries</li>
+            <li>Books</li>
+        </ul>
+        <h2>Product Gallery</h2>
+        <div class="image-gallery">
+            <img src="https://via.placeholder.com/150" alt="Product 1">
+            <img src="https://via.placeholder.com/150" alt="Product 2">
+            <img src="https://via.placeholder.com/150" alt="Product 3">
+            <img src="https://via.placeholder.com/150" alt="Product 4">
+            <img src="https://via.placeholder.com/150" alt="Product 5">
+        </div>
+        <h2>Product Details</h2>
+        <table>
+            <tr>
+                <th>Product</th>
+                <th>Price</th>
+                <th>Stock</th>
+            </tr>
+            <tr>
+                <td>Laptop</td>
+                <td>$800</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td>Shirt</td>
+                <td>$20</td>
+                <td>50</td>
+            </tr>
+            <tr>
+                <td>Blender</td>
+                <td>$50</td>
+                <td>15</td>
+            </tr>
+            <tr>
+                <td>Rice</td>
+                <td>$10</td>
+                <td>100</td>
+            </tr>
+            <tr>
+                <td>Novel</td>
+                <td>$15</td>
+                <td>30</td>
+            </tr>
+        </table>
+    </div>
+    <footer>
+        <p>&copy; 2025 Shop Website | Designed by Hasini</p>
+    </footer>
+</body>
+
+</html>
